@@ -1,4 +1,4 @@
-openapi: 3.0.3
+swagger: "2.0"
 info:
   title: Attendence Management System
   description: |-
@@ -996,19 +996,3 @@ components:
           type: string
           format: date-time
           example: 2017-07-21T17:32:28Z
-
-  requestBodies:
-    Pet:
-      description: ams object that needs to be added to the store
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Employee'
-    UserArray:
-      description: List of user object
-      content:
-        application/json:
-          schema:
-            type: array
-            items:
-              $ref: '#/components/schemas/Employee'
